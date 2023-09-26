@@ -2,7 +2,7 @@
 
 This GUI was created in Python to play with LLaMA models and examine the interplay of model-driven agents on a 2022 Macbook Pro.  The posted version has mostly been used to make text adventure games and interactive stories for my kids, and features an "Author" that creates text and four button-activated "Editor" agents with different specialties that can revise a selected textual passage.
 
-<img src="LLaMA GUI v0_1 image.png" width="1000">
+<img src="LLaMA GUI v0_1 image.png" width="600">
 
 ## Installation and performance:
 
