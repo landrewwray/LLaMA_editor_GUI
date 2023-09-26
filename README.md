@@ -6,11 +6,11 @@ This GUI was created in Python to play with LLaMA models and examine the interpl
 
 ## Installation and performance:
 
-To run the model, first install llama_cpp_python (abetlen/llama-cpp-python), then download a quantized LLaMA model (here's a large repository: https://huggingface.co/TheBloke) and enter the model path in the line that reads "llm = Llama(model_path="***your selected model here***", n_ctx=4096)"
+To run the GUI, first install llama_cpp_python ([abetlen/llama-cpp-python](https://github.com/abetlen/llama-cpp-python)), then download a quantized LLaMA model (here's a large repository: https://huggingface.co/TheBloke) and enter the model path in the line that reads "llm = Llama(model_path="***your selected model here***", n_ctx=4096)". 
 
 The "QUEUE TEXT FOR AGENTS" section of the code can be edited to repurpose the editors -- for example, as metacognitive narrators or characters in a role playing game.
 
-One for the "q4" quantized 13B LLaMA2 models, one should see ~10 tokens/s in normal use on an Apple M2 Max processor. Output quality will degrade as the number of tokens 
+One for the "q4" quantized 13B LLaMA2 models, one should see ~10 tokens/s in normal use on an Apple M2 Max processor. Output quality will degrade as the number of tokens. The quality degredation from q4 quantization is thought to be minor, and can be 
 
 ## Sample output:
 
