@@ -8,7 +8,7 @@ The "QUEUE TEXT FOR AGENTS" section of the code can be edited to repurpose the e
 
 ## Installation and performance:
 
-To run the GUI, **first** install [llama_cpp_python](https://github.com/abetlen/llama-cpp-python) and make sure you have the PyQt5 package. If you're not already working with llama.cpp, you may want to create a dedicated environment for this.
+To run the GUI, **first** install [llama_cpp_python](https://github.com/abetlen/llama-cpp-python) and the PyQt5 package. If you're not already working with llama.cpp, you may want to create a dedicated environment for this.
 
 **Second**, download a quantized LLaMA model ([here's a large repository](https://huggingface.co/TheBloke)) and enter the model path in the line that reads ***llm = Llama(model_path="your selected model here", n_ctx=4096)***. For example, ***llm = Llama(model_path="airoboros-l2-13b-gpt4-m2.0.Q4_K_M.gguf", n_ctx=4096)*** was used for the example below. The GUI was developed in Anaconda/Spyder.
 
