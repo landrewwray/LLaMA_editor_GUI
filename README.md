@@ -2,15 +2,15 @@
 
 This GUI was created in Python to play with LLaMA models and examine the interplay of model-driven agents on a 2022 Macbook Pro.  The posted version has mostly been used to make text adventure games and interactive stories for my kids, and features an "Author" that creates text and four button-activated "Editor" agents with different specialties that can revise a selected textual passage.
 
+The "QUEUE TEXT FOR AGENTS" section of the code can be edited to repurpose the editors -- for example, as metacognitive narrators or characters in a role playing game.
+
 <img src="LLaMA GUI v0_1 image.png" width="600">
 
 ## Installation and performance:
 
-To run the GUI, first install llama_cpp_python ([abetlen/llama-cpp-python](https://github.com/abetlen/llama-cpp-python)), then download a quantized LLaMA model (here's a large repository: https://huggingface.co/TheBloke) and enter the model path in the line that reads "llm = Llama(model_path="***your selected model here***", n_ctx=4096)". 
+To run the GUI, first install [llama_cpp_python](https://github.com/abetlen/llama-cpp-python), then download a quantized LLaMA model ([here's a large repository](https://huggingface.co/TheBloke)) and enter the model path in the line that reads "llm = Llama(model_path="***your selected model here***", n_ctx=4096)". 
 
-The "QUEUE TEXT FOR AGENTS" section of the code can be edited to repurpose the editors -- for example, as metacognitive narrators or characters in a role playing game.
-
-One for the "q4" quantized 13B LLaMA2 models, one should see ~10 tokens/s in normal use on an Apple M2 Max processor. Output quality will degrade as the number of tokens. The quality degredation from q4 quantization is thought to be minor, and can be 
+For the "q4" quantized 13B LLaMA2 models, one should see ~10 tokens/s in normal use on an Apple M2 Max processor. I recommend q4 quantization as the model size can be reduced by a factor of ~3 with no significant degradation of perplexity scores. ([see characterization here](https://github.com/ggerganov/llama.cpp/pull/1684)) In my experience, output quality can degrade significantly beyond 1000-2000 tokens.
 
 ## Sample output:
 
