@@ -10,7 +10,7 @@ The "QUEUE TEXT FOR AGENTS" section of the code can be edited to repurpose the e
 
 To run the GUI, **first** install [llama_cpp_python](https://github.com/abetlen/llama-cpp-python) and the PyQt5 package. If you're not already working with llama.cpp, you may want to create a dedicated environment for this.
 
-**Second**, download a quantized LLaMA model ([here's a large repository](https://huggingface.co/TheBloke)) and enter the model path in the line that reads ***llm = Llama(model_path="your selected model here", n_ctx=4096)***. For example, ***llm = Llama(model_path="airoboros-l2-13b-gpt4-m2.0.Q4_K_M.gguf", n_ctx=4096)*** was used for the example below. The GUI was developed in Anaconda/Spyder.
+**Second**, download a LLaMA model quantized in the .gguf format (here's a [large repository of quantized models](https://huggingface.co/TheBloke)) and enter the model path in the line that reads ***llm = Llama(model_path="your selected model here", n_ctx=4096)***. For example, ***llm = Llama(model_path="airoboros-l2-13b-gpt4-m2.0.Q4_K_M.gguf", n_ctx=4096)*** was used for the sample output below. The GUI was developed in Anaconda/Spyder.
 
 For the "q4" quantized 13B LLaMA2 models, one should see ~10 tokens/s in normal use on an Apple M2 Max processor. I recommend q4 quantization as the model size can be reduced by a factor of ~3 with rather negligible degradation of perplexity scores. ([see characterization here](https://github.com/ggerganov/llama.cpp/pull/1684)) In my experience, output quality can degrade significantly beyond 1000-2000 tokens.
 
