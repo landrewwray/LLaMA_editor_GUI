@@ -8,9 +8,9 @@ The "QUEUE TEXT FOR AGENTS" section of the code can be edited to repurpose the e
 
 ## Installation and performance:
 
-To run the GUI, first install [llama_cpp_python](https://github.com/abetlen/llama-cpp-python), then download a quantized LLaMA model ([here's a large repository](https://huggingface.co/TheBloke)) and enter the model path in the line that reads "llm = Llama(model_path="***your selected model here***", n_ctx=4096)". 
+To run the GUI, first use install [llama_cpp_python](https://github.com/abetlen/llama-cpp-python) and make sure you have the PyQt5 package. Then download a quantized LLaMA model ([here's a large repository](https://huggingface.co/TheBloke)) and enter the model path in the line that reads ***llm = Llama(model_path="your selected model here", n_ctx=4096)***. For example, ***llm = Llama(model_path="airoboros-l2-13b-gpt4-m2.0.Q4_K_M.gguf", n_ctx=4096)*** was used for the example below.
 
-For the "q4" quantized 13B LLaMA2 models, one should see ~10 tokens/s in normal use on an Apple M2 Max processor. I recommend q4 quantization as the model size can be reduced by a factor of ~3 with no significant degradation of perplexity scores. ([see characterization here](https://github.com/ggerganov/llama.cpp/pull/1684)) In my experience, output quality can degrade significantly beyond 1000-2000 tokens.
+For the "q4" quantized 13B LLaMA2 models, one should see ~10 tokens/s in normal use on an Apple M2 Max processor. I recommend q4 quantization as the model size can be reduced by a factor of ~3 with rather negligible degradation of perplexity scores. ([see characterization here](https://github.com/ggerganov/llama.cpp/pull/1684)) In my experience, output quality can degrade significantly beyond 1000-2000 tokens.
 
 ## Sample output:
 
