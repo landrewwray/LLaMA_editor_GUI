@@ -1,19 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
+'''
 Created on Sun Sep 24 15:12:52 2023
 
-@author: lawray
-"""
-
-'''
-TO DO:
--list of questions for the editors
--add a name for each editor
-
--make editors act within a selected window
-
-    
+Possible future updates (9/26/2023):
+-save button
+-longer prompt for editors, including questions they should ask before updating the text
+-init editors via text file and consider allowing prompt modification in an additional GUI layer
 '''
 
 import sys
